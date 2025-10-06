@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtime Group Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      💬 Group Chat
+      <span id="userDisplay" class="username-tag"></span>
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <form id="chatForm">
+      <input id="messageInput" placeholder="Type a message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="js/chat.js"></script>
+</body>
+</html>
